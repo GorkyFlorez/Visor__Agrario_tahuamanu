@@ -1,0 +1,45 @@
+---
+title: "Visor Agrario "
+author: "Ing. Gorky Florez Castillo"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    logo: PNG/Bio.png
+    social: [ "twitter", "facebook", "whatsapp", "instagram", "telegram" ]
+    source_code: "https://github.com/GorkyFlorez"
+    theme: readable
+    # "default", "cerulean", "journal", "flatly", "darkly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti"
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(dplyr)
+library(lubridate)
+library(ggplot2)
+library(tm)
+library(wordcloud)
+library(sf)
+library(formattable)
+library(RColorBrewer)
+library(DT)
+library(crosstalk)
+library(leaflet)
+library(leaflet.extras)
+library(leaflet.providers)
+library(htmlwidgets)
+library(leafem)
+library(plotly)
+library(ggplot2)
+
+
+source("Mapa leaflex.R")
+```
+
+# Visor de predios rurales de la provincia de Tahuamanu {data-icon=fa-globe-americas} 
+
+Column  {data-width=1500}
+-------------------------------------
+### 
+```{r}
+Mapa
+```
